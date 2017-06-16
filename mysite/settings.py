@@ -25,7 +25,7 @@ SECRET_KEY = 'rub^e3u=)gdtsyc5bikc+sz@m5b^7d-uq19ab8gv3)3-@vxl1g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','stainedart.pythonanywhere.com']
 
 
 # Application definition
