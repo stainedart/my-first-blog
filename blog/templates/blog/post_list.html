@@ -5,6 +5,15 @@
     <title>Blog application</title>
 </head>
 <body>
+<div>
+    {% for post in posts %}
+        <div>
+            <p> published: {{ post.published_date }}</p>
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+</div>
 <h3>Works!</h3>
 </body>
 </html>
