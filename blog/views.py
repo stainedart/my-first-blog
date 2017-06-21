@@ -35,6 +35,7 @@ def post_edit(request, pk):
         form = PostForm(request.POST)
         if form.is_valid():
             post = form.save(commit=False)
+            post.pk = pk
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
