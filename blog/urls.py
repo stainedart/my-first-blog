@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'^post/(?P<pk>\d+)/publish/$',views.post_publish, name="post_publish"),
     url(r'^post/(?P<pk>\d+)/delete/$',views.post_delete, name="post_delete"),
     url(r'^draft/$',views.post_draft_list, name='post_draft_list'),
+    url(r'^logout/$', views.user_logout, name='logout'),
 ]
